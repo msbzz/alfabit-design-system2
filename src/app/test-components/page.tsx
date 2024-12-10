@@ -1,15 +1,23 @@
-import React from 'react';
-import Divider from '../components/Divider/Divider';
+import React from 'react'
+import Divider from '../components/Divider/Divider'
+import Box from '../components/Box/Box'
 
 const Home = () => {
   return (
     <div>
-      <h1>Testing Divider Component</h1>
-      <Divider width="w-full" height="h-2" bgColor="light">
-        Hello Divider
-      </Divider>
+      <h1>Testing Components</h1>
+      <Divider>Hello Divider</Divider>
+      <Box
+          filledBackground= {true}  
+          rounded= {true} 
+          type= "alert"
+          className='w-1/2' 
+      
+      >
+        Conteúdo Box com Alert
+      </Box>
     </div>
-  );
-};
+  )
+}
 
-export default Home;
+export default Home
