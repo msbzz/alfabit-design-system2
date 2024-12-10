@@ -41,7 +41,12 @@
     --text-primary: 24, 24, 24;
     --text-secondary: 92, 92, 92;
     --text-tertiary: 116, 116, 116;
+    --text-success: 58, 201, 34;
+    --text-error: 255, 48, 48;
     --text-disabled: 138, 138, 138;
+
+    --scrollbar-thumb-color: #d7d7d7;
+    --scrollbar-track-color: #ededed;
 
     /* Screens */
     --screen-mobile: 640px;
@@ -84,12 +89,14 @@
     --text-md: 16px;
     --text-lg: 18px;
     --text-xl: 20px;
-}
-  
-   
-  .theme-violet{
-    --primary-1 : rgb(76,40,129);
 
+    /* Title Font Size */
+    --title-md: 40px;
+    --title-lg: 48px;
+    --title-xl: 56px;
+  }
+
+  .theme-violet {
     --primary: 175, 75, 254;
     --secondary: 190, 116, 249;
     --tertiary: 226, 189, 255;
