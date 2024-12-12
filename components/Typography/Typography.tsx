@@ -1,5 +1,7 @@
 import React from "react";
 import { cva, type VariantProps } from "class-variance-authority";
+ 
+ 
 
 const textVariants = cva("text-gray-primary text-sm font-normal", {
   variants: {
@@ -35,6 +37,7 @@ const Typography = ({
   className,
   ...rest
 }: TypographyProps) => {
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const Element = element as any;
   return (
     <Element className={`${textVariants(rest)} ${className}`} {...rest}>

@@ -5,9 +5,12 @@ import Box, {type BoxProps} from './Box'
 const meta: Meta<BoxProps> = {
   title: "Atoms/Box",
   component: Box,
+  parameters: {
+    // Optional parameter to center the component in the Canvas. More info: https://storybook.js.org/docs/configure/story-layout
+    layout: 'centered',
+  },
   argTypes: {
     children: { type: "string" },
-    type: { type: "string" },
     rounded: { type: "boolean" },
     border: { type: "boolean" },
     filledBackground: { type: "boolean" },

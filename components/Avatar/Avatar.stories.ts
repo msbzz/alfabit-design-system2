@@ -7,7 +7,6 @@ const meta: Meta<AvatarProps> = {
   component: Avatar,
   argTypes: {
     className: { type: "string" },
-    size: { type: "string" },
   },
 };
 

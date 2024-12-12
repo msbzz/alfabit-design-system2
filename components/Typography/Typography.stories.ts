@@ -6,6 +6,7 @@ import Typography, { type TypographyProps } from "./Typography";
 const meta: Meta<TypographyProps> = {
   title: "Atoms/Typography",
   component: Typography,
+  
   argTypes: {
     className: {
       type: "string",

@@ -5,7 +5,7 @@ export type BoxProps = {
   rounded?: boolean;
   border?: boolean;
   filledBackground?: boolean;
-  type?: "primary" | "secondary" | "dark" | "alert" | "success" | "error";
+  type?: 'primary'  | 'secondary'  | 'dark'  | 'alert'  | 'success'  | 'error' ;
   children: React.ReactNode;
 } & React.HTMLAttributes<HTMLDivElement>;
 
@@ -22,7 +22,7 @@ const Box = ({
   rounded = false,
   border = false,
   filledBackground = false,
-  type = "primary",
+  type = 'primary',
   children,
   className,
   ...rest
@@ -32,7 +32,7 @@ const Box = ({
     "border border-gray-100": border,
     "bg-dark": filledBackground,
     [boxClassMap[type]]: type,
-  });
+  },className );
   return (
     <div className={classes} {...rest}>
       {children}
